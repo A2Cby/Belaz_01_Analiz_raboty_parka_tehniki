@@ -1,0 +1,14 @@
+{
+  "qTitle": "_БЕЛАЗ_Анализ работы парка техники",
+  "qMigrationHash": "21ecc792c56e18162f1785d3d41f28fdaced5c96",
+  "qThumbnail": {
+    "qUrl": "/appcontent/049bcbac-2b80-462e-9559-423dce87f6eb/images.jpg"
+  },
+  "published": true,
+  "description": "",
+  "dynamicColor": "hsla(28,18%,43%,1)",
+  "stream": {
+    "id": "cd3e728c-12a2-4ff5-9382-2920155f650c",
+    "name": "БЕЛАЗ"
+  }
+}

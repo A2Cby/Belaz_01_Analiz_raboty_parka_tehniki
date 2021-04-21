@@ -1,0 +1,19 @@
+[
+  {
+    "task": {
+      "id": "0177e62f-4574-4c89-8cac-8d77bf43e307",
+      "app": {
+        "id": "049bcbac-2b80-462e-9559-423dce87f6eb"
+      },
+      "name": "Manually triggered reload of _БЕЛАЗ_Анализ работы парка техники",
+      "taskType": 0,
+      "enabled": true,
+      "taskSessionTimeout": 1440,
+      "maxRetries": 0,
+      "tags": [],
+      "customProperties": [],
+      "isManuallyTriggered": true,
+      "privileges": null
+    }
+  }
+]

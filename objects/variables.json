@@ -1,0 +1,166 @@
+[
+  {
+    "qInfo": {
+      "qId": "0d725c78-e91b-44cd-af93-81edcb54b0ff",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vTypeModel_2",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "11f5ad63-03ad-4b86-bf7c-0b6942dbc8b1",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vTypeModel_1",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "2f264a23-d74d-4df8-97d1-74e6fbe5c91c",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "_Switcher",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "48d714c5-a4cf-44c3-a2e0-8d4c6cb6cec2",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "DateFinish",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "30.06.2019"
+  },
+  {
+    "qInfo": {
+      "qId": "51863549-7793-44b1-9ad3-6bae6efdb045",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "DateStart",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "01.01.2019",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "5848092d-98f1-48ee-b8b8-f4cfb33acdf0",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "YearDefault",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "2019",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "b1eb0f00-e052-4adb-bfa5-d39fb4424d62",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "_DimCalendar",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Месяц",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "ba3459bc-c98d-4bb4-b725-e11517098fe7",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vKIO",
+    "qComment": "/*12,09,2019 заменили 22 часа на 24 часа*/",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "(Num#(Interval(SUm({<[КодСобытия]={'6'}, flgГруженый={'1'}>}  [ДельтаВСекРазгр])/86400, 'mm'))\r\n+\nNum#(Interval(SUm({<[КодСобытия]={'6'}, [flgПорожний]={'1'}>}  [ДельтаВСекПорожний])/86400, 'mm'))\n+\nnum#(\nInterval(\nSum( {<[flgОжиданиеПогр]={'1'}>} Interval(ВремяПогр,'mm'))\n+\nSum( {<[flgОжиданиеРазгр]={'1'}>} Interval(ВремяРазг,'mm')),'mm'))\n)\n/((count(distinct Дата)*24*60)*Count(distinct ПаркТехники) )\n\n\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "c2209b40-2fae-46a1-b472-268e8b8b1291",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "MonthDefault",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "июн."
+  },
+  {
+    "qInfo": {
+      "qId": "c94a90bd-08cd-4f21-b510-7ba5825f266c",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "_Dim",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Предприятие",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "d10f1494-9c79-490f-b49d-3cea4c0b92ef",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "PathQVD",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "lib://ETL (a2cdemo_admin)/",
+    "qIsScriptCreated": true
+  }
+]
